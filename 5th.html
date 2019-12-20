@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click Here....</p>
+
+<button onclick="myFunction()">Touch me</button>
+
+<p id="demo"></p>
+
+<script>
+var Foods = ["Rice", "Pizza", "Sandwitch", "Rolls"];
+document.getElementById("demo").innerHTML = Foods;
+
+function myFunction() {
+  Foods.pop();
+  Foods.push("Cake");
+  Foods.shift();
+
+  document.getElementById("demo").innerHTML = Foods;
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click Here....</p>
+
+<button onclick="myFunction()">Touch me</button>
+
+<p id="demo"></p>
+
+<script>
+var Fruit = ["Apple"];
+document.getElementById("demo").innerHTML = Fruit;
+
+function myFunction() {
+    Fruit.splice(0, 0, "Pineapple", "Lemon");
+    Fruit.splice(4, 1, "Orange", "Peach");
+  document.getElementById("demo").innerHTML = Fruit;
+}
+
+</script>
+
+</body>
+</html>
